@@ -1,0 +1,34 @@
+main: me.jasonhorkles.simplebooks.SimpleBooks
+name: SimpleBooks
+description: A simple plugin to store books and retrieve them with a small command
+version: %VERSION%
+author: JasonHorkles
+website: https://github.com/SilverstoneMC/SimpleBooks
+api-version: 1.17
+
+commands:
+  forcebook:
+    description: "Force a book to be opened at a player"
+    usage: "§cUsage: /forcebook <bookname> [player]"
+    permission: simplebooks.force
+  listbooks:
+    description: "List the available book names"
+    permission: simplebooks.list
+  loadbook:
+    description: "Load a saved book"
+    permission: simplebooks.load
+    usage: "§cUsage: /loadbook <bookname> [player]"
+  savebook:
+    description: "Save the book you're currently holding"
+    permission: simplebooks.save
+    usage: "§cUsage: /savebook <bookname>"
+
+permissions:
+  simplebooks.force:
+    default: op
+  simplebooks.list:
+    default: op
+  simplebooks.load:
+    default: op
+  simplebooks.save:
+    default: op
