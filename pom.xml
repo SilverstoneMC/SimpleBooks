@@ -6,7 +6,7 @@
 
     <groupId>me.JasonHorkles</groupId>
     <artifactId>SimpleBooks</artifactId>
-    <version>1.0.0-Beta</version>
+    <version>1.0.0</version>
 
     <packaging>jar</packaging>
     <build>
