@@ -9,7 +9,7 @@ api-version: 1.17
 commands:
   forcebook:
     description: "Force a book to be opened at a player"
-    usage: "§cUsage: /forcebook <bookname> [player]"
+    usage: "§cUsage: /forcebook <bookname> <player>"
     permission: simplebooks.force
   listbooks:
     description: "List the available book names"
