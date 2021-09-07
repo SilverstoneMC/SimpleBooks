@@ -9,8 +9,8 @@ api-version: 1.17
 commands:
   forcebook:
     description: "Force a book to be opened at a player"
-    usage: "§cUsage: /forcebook <bookname> <player>"
     permission: simplebooks.force
+    usage: "§cUsage: /forcebook <bookname> <player>"
   listbooks:
     description: "List the available book names"
     permission: simplebooks.list
@@ -22,6 +22,10 @@ commands:
     description: "Save the book you're currently holding"
     permission: simplebooks.save
     usage: "§cUsage: /savebook <bookname>"
+  sbrl:
+    aliases: [ simplebooksrl, simplebooksreload, sbreload ]
+    description: "Reload the plugin"
+    permission: simplebooks.reload
 
 permissions:
   simplebooks.force:
@@ -29,6 +33,8 @@ permissions:
   simplebooks.list:
     default: op
   simplebooks.load:
+    default: op
+  simplebooks.reload:
     default: op
   simplebooks.save:
     default: op

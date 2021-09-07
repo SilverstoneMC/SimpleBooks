@@ -95,6 +95,13 @@ public class SimpleBooks extends JavaPlugin implements CommandExecutor {
                     sender.sendMessage(ChatColor.DARK_AQUA + book);
                 }
             }
+
+            case "sbrl" -> {
+                data.saveDefaultConfig();
+                data.reloadConfig();
+
+                sender.sendMessage(ChatColor.GREEN + "SimpleBooks reloaded!");
+            }
         }
         return true;
     }
