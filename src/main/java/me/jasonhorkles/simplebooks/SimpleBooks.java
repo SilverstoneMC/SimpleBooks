@@ -37,9 +37,7 @@ public class SimpleBooks extends JavaPlugin implements CommandExecutor {
                 if (args.length > 0) {
                     data.getConfig().set(args[0], player.getInventory().getItemInMainHand().getItemMeta());
                     data.saveConfig();
-                } else {
-                    return false;
-                }
+                } else return false;
             }
 
             case "loadbook" -> {
@@ -65,9 +63,7 @@ public class SimpleBooks extends JavaPlugin implements CommandExecutor {
                         player.getInventory().addItem(item);
                     }
 
-                } else {
-                    return false;
-                }
+                } else return false;
             }
 
             case "forcebook" -> {
@@ -84,16 +80,12 @@ public class SimpleBooks extends JavaPlugin implements CommandExecutor {
 
                     player.openBook(item);
 
-                } else {
-                    return false;
-                }
+                } else return false;
             }
 
             case "listbooks" -> {
                 sender.sendMessage(ChatColor.DARK_GREEN + "Available books:");
-                for (String book : data.getConfig().getKeys(false)) {
-                    sender.sendMessage(ChatColor.DARK_AQUA + book);
-                }
+                for (String book : data.getConfig().getKeys(false)) sender.sendMessage(ChatColor.DARK_AQUA + book);
             }
 
             case "sbrl" -> {

@@ -52,9 +52,7 @@ public class DataManager {
     }
 
     public void saveDefaultConfig() {
-        if (configFile == null) {
-            configFile = new File(plugin.getDataFolder(), "data.yml");
-        }
+        if (configFile == null) configFile = new File(plugin.getDataFolder(), "data.yml");
         if (!configFile.exists())
             plugin.saveResource("data.yml", false);
     }
