@@ -4,7 +4,7 @@ description: A simple plugin to store books and retrieve them with a small comma
 version: %VERSION%
 author: JasonHorkles
 website: https://github.com/SilverstoneMC/SimpleBooks
-api-version: 1.16.5
+api-version: 1.16
 
 commands:
   forcebook:
